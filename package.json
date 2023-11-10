@@ -1,0 +1,24 @@
+{
+  "name": "rabbitmq-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "send": "NODE_ENV=development npx tsx watch src/send.ts",
+    "received": "NODE_ENV=development npx tsx watch src/received.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.4",
+    "@types/node": "^20.9.0",
+    "dotenv": "^16.3.1",
+    "tsx": "^4.1.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
