@@ -5,7 +5,7 @@ import "dotenv/config"
 
 /** AMQP_URL is the URL to the AMQP server. */
 const AMQP_URL = process.env.AMQP_URL as string // recommended to use docker container running rabbitmq
-
+// .
 /** AMQP_QUEUE is the name of the queue to send messages to.*/
 amqp.connect(AMQP_URL, (err: Error | undefined, connection: Connection) => {
     if (err) throw err
